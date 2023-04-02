@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> shaxboz </title>
+    </head> 
+    <body>
+        {% for i in context %}
+        <h1>Blog</h1>
+        <a href = "{% url "detail" i.name %}">{{i.name}}</a><br>
+        {% endfor %}
+    </body>
+</html>
